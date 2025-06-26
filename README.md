@@ -20,7 +20,8 @@ Este proyecto es una API REST para la gestión de usuarios, mascotas y adopcione
 
 ## Instalación 🔧
 
-1. Clonar el repositorio o descargar el ZIP
+1. Clonar el repositorio:
+git clone https://github.com/MatiasArias97/proyectobekendIII.git cd
 2. Instalar dependencias:
 
 
@@ -28,8 +29,7 @@ npm install
 
 3. Configurar el archivo .env con tu URL de conexión a MongoDB:
 
-MONGO_URL=mongodb+srv://Ariasmatias97:ce140221m@ClusterMatias.gu7dsvq.mongodb.net/proyectoFinal?retryWrites=true&w=majority&appName=ClusterMatias
-JWT_SECRET=milo1234
+mongoose.connect('mongodb+srv://usuario:password@cluster0.xxxxxx.mongodb.net/proyectoFinal?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true, });
 
 4. Iniciar el servidor:
 
