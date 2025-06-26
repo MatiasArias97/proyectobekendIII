@@ -11,5 +11,14 @@ router.get('/', async (req, res) => {
     res.status(500).json({ status: 'error', error: error.message });
   }
 });
+// POST: Crear una nueva mascota
+router.post('/', async (req, res) => {
+  try {
+    const newPet = await PetModel.create(req.body);
+    res.status(201).json({ status: 'success', payload: newPet });
+  } catch (error) {
+    res.status(500).json({ status: 'error', error: error.message });
+  }
+});
 
 export default router;
